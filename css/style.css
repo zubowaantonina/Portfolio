@@ -6,16 +6,15 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #20202D;
+    background-color: #20202d;
     margin: 0;
-    color: #ffff
+    color: #ffff;
 }
 
 .container {
     max-width: 945px;
     width: 100%;
     margin: auto;
-
 }
 
 .section {
@@ -36,7 +35,6 @@ body {
     padding-top: 50px;
     padding-bottom: 155px;
     background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
-
 }
 
 .hero-header {
@@ -61,7 +59,7 @@ body {
     display: block;
     font-size: 24px;
     line-height: 28px;
-    color: #FFBB01;
+    color: #ffbb01;
     margin-bottom: 14px;
 }
 
@@ -90,7 +88,6 @@ body {
     line-height: 14px;
     text-transform: uppercase;
     font-weight: bold;
-    
 }
 
 .hero-avatar {
@@ -144,11 +141,67 @@ body {
     margin: 0;
 }
 
+/* projects */
+.projects {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+}
+
+.projects-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-title {
+    flex-basis: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 41px;
+}
+
+.progect-text {
+    flex-basis: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-time,
+.project-cost {
+    flex-basis: 50%;
+    margin-bottom: 44px;
+}
+
+.project-time,
+.project-cost,
+.project-feedback {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.project-subtitle {
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.project-image {}
+
+.project-paragraph {
+    margin: 0;
+    line-height: 150%;
+    font-size: 16px;
+}
+
 /* contacts */
 .contacts-block {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
 
 .contacts-form {
@@ -169,69 +222,98 @@ body {
     letter-spacing: 0px;
     text-align: center;
 }
-.input{
+
+.input {
     box-shadow: 0px 3px 10px rgba(199, 199, 199, 0.25) inset;
     background-color: #f8f8f8;
-    border-radius:5px;
+    border-radius: 5px;
     padding: 18px 20px;
     width: 100%;
-    border:none;
-    font-size:14px;
-line-height:28px;
-padding-left: 50px;
+    border: none;
+    font-size: 14px;
+    line-height: 28px;
+    padding-left: 50px;
 }
-.input-name{
+
+.input-name {
     margin-bottom: 17px;
-   background-image: url(../images/icon/user-icon.svg);
+    background-image: url(../images/icon/user-icon.svg);
     background-repeat: no-repeat;
-    background-position:center left 20px;
+    background-position: center left 20px;
 }
-.input-phone{
+
+.input-phone {
     margin-bottom: 17px;
-   background-image: url(../images/icon/phone-icon.svg);
+    background-image: url(../images/icon/phone-icon.svg);
     background-repeat: no-repeat;
-    background-position:center left 20px;
+    background-position: center left 20px;
 }
-.form-button{
+
+.form-button {
     width: 100%;
 }
-.contacts-text{
+
+.contacts-text {
     flex-basis: 50%;
 }
-.contacts-data{
+
+.contacts-data {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 42px;
 }
-.contacts-title{
-    font-size:24px;
-font-weight:bold;
-line-height:28px;
-margin: 0;
-margin-bottom: 15px;
+
+.contacts-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 15px;
 }
-.contacts-phone,.contacts-mail{
+
+.contacts-phone,
+.contacts-mail {
     flex-basis: 50%;
     margin-bottom: 53px;
 }
-.contacts-social{
-    flex-basis: 100%;
-   
 
+.contacts-social {
+    flex-basis: 100%;
 }
-.contacts-link{
+
+.contacts-link {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
     margin-right: 37px;
 }
-.contacts-link:hover{
+
+.contacts-link:hover {
     text-decoration: underline;
 }
-.contacts-policy{
-    display:inline-block;
-    font-size:15px;
-line-height:18px;
-text-decoration:underline;
-color:#a5a5a5;
-margin-top: 72px;
+
+.contacts-policy {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: underline;
+    color: #a5a5a5;
+    margin-top: 72px;
+}
+.project-pagination{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    margin-top: 44px;
+}
+.project-bullet{
+    width: 10px;
+    height: 10px;
+    border:solid 2px #ffbb01;
+    border-radius:50%;
+    display: inline-block;
+}
+.project-bullet-activ{
+    background-color:#ffbb01;
+    display: inline-block;
 }
